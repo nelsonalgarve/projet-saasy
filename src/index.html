@@ -3,50 +3,216 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c95e5e3ffa.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/33a775bcdb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet" />
 </head>
 
-<body class="min-h-screen bg-slate-100 bg-gradient-to-r from-sky-500 to-purple-500 p-2 text-slate-600">
-    <div class="mx-auto container bg-white rounded-2xl min-h-screen px-12 py-8">
-        <header class="border-b grid grid-cols-3 items-center py-8">
-            <img src="./assets/images/logo.png" alt="logo" class="w-10">
+<body class="min-h-screen bg-gradient-to-r from-sky-500 to-purple-500 p-8 text-slate-600">
+    <div class="container mx-auto min-h-screen rounded-2xl bg-white">
+        <header class="grid grid-cols-3 items-center border-b px-12 py-8">
+            <img src="./assets/images/logo.png" class="w-10" />
             <ul class="flex items-center justify-center gap-x-6">
-                <a href="#" class="hover:text-sky-500 font-bold">Home</a>
-                <a href="#" class="hover:text-sky-500 font-bold">Invoices</a>
-                <a href="#" class="hover:text-sky-500 font-bold">Clients</a>
-                <a href="#" class="hover:text-sky-500 font-bold">Expenses</a>
+                <a class="font-bold hover:text-sky-500" href="#">Home</a><a class="font-bold hover:text-sky-500"
+                    href="#">Invoices</a><a class="font-bold hover:text-sky-500" href="#">Clients</a><a
+                    class="font-bold hover:text-sky-500" href="#">Expenses</a>
             </ul>
-            <ul class="flex justify-end gap-x-6 items-center">
+            <ul class="flex items-center justify-end gap-x-6">
                 <li>
                     <i class="fa-regular fa-bell fa-lg text-slate-400"></i>
                 </li>
                 <li>
-                    <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Justin Cruz"
-                        class="w-8 rounded-full">
+                    <img class="w-8 rounded-full" src="https://randomuser.me/api/portraits/women/65.jpg" />
                 </li>
             </ul>
-
         </header>
-        <div class="flex px-12 py-8 justify-between border-b font-bold items-center">
-            <ul class="flex">
-                <li class="border-b-amber-400 border-r  pr-3 text-slate-950">
-                    Cashflow
-                </li>
-                <a href="#" class="px-3 text-sky-500">Last 7 days</a>
-                <a href="#" class="px-3 hover:text-sky-500">All-time</a>
-                <a href="#" class="px-3 hover:text-sky-500">Last 30 days</a>
+        <div class="flex items-center justify-between border-b px-12 py-8 font-bold">
+            <ul class="flex font-bold">
+                <li class="border-r pr-3 text-slate-950">Cashflow</li>
+                <a class="px-3 text-sky-500 hover:text-sky-500" href="#">Last 7 days</a><a
+                    class="px-3 hover:text-sky-500" href="#">Last 30 days</a><a class="px-3 hover:text-sky-500"
+                    href="#">All-time</a>
             </ul>
-            <button type=" button"
-                class="rounded-lg bg-sky-600 px-4 py-2 text-sm text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">
-                + new invoice
+            <button class="rounded-lg bg-sky-500 px-4 py-2 text-white hover:bg-sky-600 active:bg-sky-700">
+                + New Invoice
             </button>
         </div>
+        <div class="mb-12 grid grid-cols-4 divide-x border-b">
+            <div class="p-12 text-slate-400">
+                <div class="mb-2 flex justify-between text-sm font-bold">
+                    <h4>Revenue</h4>
+                    <p>+4.75%</p>
+                </div>
+                <p class="text-4xl text-slate-950">$405,091.00</p>
+            </div>
+            <div class="p-12 text-slate-400">
+                <div class="mb-2 flex justify-between text-sm font-bold">
+                    <h4>Overdue invoices</h4>
+                    <p class="text-red-500">+12.61%</p>
+                </div>
+                <p class="text-4xl text-slate-950">$12,101.00</p>
+            </div>
+            <div class="p-12 text-slate-400">
+                <div class="mb-2 flex justify-between text-sm font-bold">
+                    <h4>Oustanding invoices</h4>
+                    <p>-3.25%</p>
+                </div>
+                <p class="text-4xl text-slate-950">$205,222.00</p>
+            </div>
+            <div class="p-12 text-slate-400">
+                <div class="mb-2 flex justify-between text-sm font-bold">
+                    <h4>Expenses</h4>
+                    <p class="text-red-500">+5.15%</p>
+                </div>
+                <p class="text-4xl text-slate-950">$22,250.00</p>
+            </div>
+        </div>
+        <div class="border-b border-slate-100 px-12 py-8 font-bold">
+            Recent activity
+        </div>
+        <p class="border-b bg-gray-50 px-12 py-2 font-bold">Today</p>
+        <ul class="px-12">
+            <li class="grid grid-cols-[50px_repeat(3,_1fr)] py-4">
+                <i class="fa-solid fa-circle-up pt-1"></i>
+                <div>
+                    <div class="mb-2 flex gap-x-4">
+                        <h4 class="font-bold">$7,600.00</h4>
+                        <div class="rounded border border-green-200 bg-green-50 px-1 text-sm font-bold text-green-600">
+                            Paid
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400">$500.00 tax</p>
+                </div>
+                <div>
+                    <h4 class="mb-2 font-bold">Reform</h4>
+                    <p class="text-sm text-slate-400">Website redesign</p>
+                </div>
+                <div class="justify-self-end text-right">
+                    <h4 class="mb-2 font-bold text-sky-500">View transaction</h4>
+                    <p class="text-sm text-slate-400">
+                        Website invoice <span class="text-slate-950">#012541</span>
+                    </p>
+                </div>
+            </li>
+            <li class="grid grid-cols-[50px_repeat(3,_1fr)] py-4">
+                <i class="fa-solid fa-circle-up pt-1"></i>
+                <div>
+                    <div class="mb-2 flex gap-x-4">
+                        <h4 class="font-bold">$7,600.00</h4>
+                        <div class="rounded border border-red-200 bg-red-50 px-1 text-sm font-bold text-red-400">
+                            Overdue
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400">$500.00 tax</p>
+                </div>
+                <div>
+                    <h4 class="mb-2 font-bold">Reform</h4>
+                    <p class="text-sm text-slate-400">Website redesign</p>
+                </div>
+                <div class="justify-self-end text-right">
+                    <h4 class="mb-2 font-bold text-sky-500">View transaction</h4>
+                    <p class="text-sm text-slate-400">
+                        Website invoice <span class="text-slate-950">#012541</span>
+                    </p>
+                </div>
+            </li>
+            <li class="grid grid-cols-[50px_repeat(3,_1fr)] py-4">
+                <i class="fa-solid fa-circle-up pt-1"></i>
+                <div>
+                    <div class="mb-2 flex gap-x-4">
+                        <h4 class="font-bold">$7,600.00</h4>
+                        <div class="rounded border border-gray-200 bg-gray-50 px-1 text-sm font-bold text-gray-400">
+                            Withdraw
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400">$500.00 tax</p>
+                </div>
+                <div>
+                    <h4 class="mb-2 font-bold">Reform</h4>
+                    <p class="text-sm text-slate-400">Website redesign</p>
+                </div>
+                <div class="justify-self-end text-right">
+                    <h4 class="mb-2 font-bold text-sky-500">View transaction</h4>
+                    <p class="text-sm text-slate-400">
+                        Website invoice <span class="text-slate-950">#012541</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <p class="border-b bg-gray-50 px-12 py-2 font-bold">Yesterday</p>
+        <ul class="px-12">
+            <li class="grid grid-cols-[50px_repeat(3,_1fr)] py-4">
+                <i class="fa-solid fa-circle-up pt-1"></i>
+                <div>
+                    <div class="mb-2 flex gap-x-4">
+                        <h4 class="font-bold">$7,600.00</h4>
+                        <div class="rounded border border-green-200 bg-green-50 px-1 text-sm font-bold text-green-600">
+                            Paid
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400">$500.00 tax</p>
+                </div>
+                <div>
+                    <h4 class="mb-2 font-bold">Reform</h4>
+                    <p class="text-sm text-slate-400">Website redesign</p>
+                </div>
+                <div class="justify-self-end text-right">
+                    <h4 class="mb-2 font-bold text-sky-500">View transaction</h4>
+                    <p class="text-sm text-slate-400">
+                        Website invoice <span class="text-slate-950">#012541</span>
+                    </p>
+                </div>
+            </li>
+            <li class="grid grid-cols-[50px_repeat(3,_1fr)] py-4">
+                <i class="fa-solid fa-circle-up pt-1"></i>
+                <div>
+                    <div class="mb-2 flex gap-x-4">
+                        <h4 class="font-bold">$7,600.00</h4>
+                        <div class="rounded border border-red-200 bg-red-50 px-1 text-sm font-bold text-red-400">
+                            Overdue
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400">$500.00 tax</p>
+                </div>
+                <div>
+                    <h4 class="mb-2 font-bold">Reform</h4>
+                    <p class="text-sm text-slate-400">Website redesign</p>
+                </div>
+                <div class="justify-self-end text-right">
+                    <h4 class="mb-2 font-bold text-sky-500">View transaction</h4>
+                    <p class="text-sm text-slate-400">
+                        Website invoice <span class="text-slate-950">#012541</span>
+                    </p>
+                </div>
+            </li>
+            <li class="grid grid-cols-[50px_repeat(3,_1fr)] py-4">
+                <i class="fa-solid fa-circle-up pt-1"></i>
+                <div>
+                    <div class="mb-2 flex gap-x-4">
+                        <h4 class="font-bold">$7,600.00</h4>
+                        <div class="rounded border border-gray-200 bg-gray-50 px-1 text-sm font-bold text-gray-400">
+                            Withdraw
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400">$500.00 tax</p>
+                </div>
+                <div>
+                    <h4 class="mb-2 font-bold">Reform</h4>
+                    <p class="text-sm text-slate-400">Website redesign</p>
+                </div>
+                <div class="justify-self-end text-right">
+                    <h4 class="mb-2 font-bold text-sky-500">View transaction</h4>
+                    <p class="text-sm text-slate-400">
+                        Website invoice <span class="text-slate-950">#012541</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
     </div>
 </body>
 
